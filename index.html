@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilbudsmal</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vkq3exs.css">
+
+    <style>
+        @page {
+            size: A4;
+            margin: 5cm; /* Margene for hele siden */
+        }
+
+        body {
+            font-family: sofia-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            page-break-inside: avoid; /* Hindre at containere brytes over sider */
+        }
+
+        .sidebar {
+            width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, p {
+            margin: 0 0 4px 0;
+        }
+        
+
+        p, li {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        @media print {
+            .container {
+                page-break-inside: avoid;
+                padding: 24px;
+            }
+
+            .content p {
+                page-break-inside: avoid;
+            }
+
+            .container:last-child {
+                page-break-after: avoid;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Tilbud</h2>
+        <p>Torderødgård</p>
+        <p>30.08.2024</p>
+        <p>002483</p>
+        <p>Studiogeist</p>
+        <!-- Legg til mer informasjon om ønskelig -->
+    </div>
+    <div class="content">
+        <img src="https://images.pexels.com/photos/1435909/pexels-photo-1435909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tilbudsbilde">
+        <h1>Tilbud på Arrangement</h1>
+        <p>Kjære Studiogeist AS,</p>
+        <p>Torderød Gård har gleden av å tilby dere en unik opplevelse på vår historiske eiendom. Med våre vakre omgivelser og førsteklasses fasiliteter, vil vi sørge for at deres arrangement blir en uforglemmelig opplevelse.</p>
+
+        <h2>Om Torderød Gård</h2>
+        <p>Torderød Gård er en herskapelig eiendom fra 1700-tallet, beliggende på Jeløy utenfor Moss. Gården tilbyr et idyllisk sted for konferanser, selskaper, og andre spesielle anledninger. Med vakre hager og historiske bygninger, gir Torderød Gård en uforglemmelig ramme rundt ethvert arrangement.</p>
+
+        <h2>Detaljer for Arrangementet</h2>
+        <p><strong>Dato:</strong> 15. september 2024</p>
+        <p><strong>Antall gjester:</strong> 50 personer</p>
+        <p><strong>Tjenester inkludert:</strong></p>
+        <ul>
+            <li>Leie av hovedhuset og hagen</li>
+            <li>Servering av velkomstdrink og kanapeer</li>
+            <li>Treretters middag med vinpakke</li>
+            <li>Underholdning og musikkanlegg</li>
+            <li>Overnatting for opptil 10 gjester</li>
+        </ul>
+
+        <h2>Pris</h2>
+        <p>Den totale prisen for dette arrangementet er <strong>150 000 NOK</strong>. Dette inkluderer alle de nevnte tjenestene, samt merverdiavgift (MVA).</p>
+
+        <h2>Betalingsbetingelser</h2>
+        <p>Betalingsbetingelsene er som følger:</p>
+        <ul>
+            <li>50% depositum ved signering av avtalen</li>
+            <li>Resterende beløp forfaller 14 dager før arrangementet</li>
+            <li>Avbestilling mindre enn 30 dager før arrangementet medfører 50% av totalbeløpet som avbestillingsgebyr</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
